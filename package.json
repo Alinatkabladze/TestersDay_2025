@@ -1,0 +1,11 @@
+{
+  "name": "tbc-credit-vrt",
+  "scripts": {
+    "test": "backstop test",
+    "reference": "backstop reference",
+    "approve": "backstop approve"
+  },
+  "dependencies": {
+    "backstopjs": "^6.6.4"
+  }
+}

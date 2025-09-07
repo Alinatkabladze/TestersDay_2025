@@ -1,0 +1,33 @@
+{
+  "id": "tbccredit-visual-tests",
+  "viewports": [
+    {
+      "label": "desktop",
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "TBC Credit Homepage",
+      "url": "https://tbccredit.ge/",
+      "delay": 2000,
+      "readySelector": "#standard-calculator",
+      "onReadyScript": "acceptCookies.js",
+      "selectors": ["document"],
+      "misMatchThreshold": 0.1
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "engine": "playwright",
+  "engineOptions": {
+    "browser": "chromium"
+  },
+  "report": ["browser"],
+  "debug": false
+}
